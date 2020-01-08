@@ -1,0 +1,51 @@
+<header>
+  <div id="nav1">
+    <div id="nav2">
+      <ul>
+        <li><span>File</span>
+          <ul>
+            <li>
+              <div id="open">Open File
+                  <input type="file"  id="imgtext" (change)='filechange($event)'/>
+              </div>
+              </li>
+          </ul>
+        </li>
+        <li><span (click)="invert()">Invert</span></li>
+        <li><span (click)="fudiao()">Fudiao</span></li>
+        <li><span (click)="blur()">Blur</span></li>
+        <li><span (click)="gray()">Gray</span></li>
+        <li><span (click)="back()">Back</span>
+        
+        
+            <!-- <ul class="share">
+                <li>Email:<input type="text" class="shareEmail" ></li>
+                
+              </ul> -->
+        </li>
+        
+        <li><span (click)="download()">Download</span>
+          <!-- <ul class="share">
+            <li>Email:<input type="text" class="shareEmail" ></li>
+            
+          </ul>  -->
+        </li>
+        <!-- <li>
+          <span (click)='rotate()'>Rotate</span>
+        </li> -->
+        <!-- <li><span>Share</span>
+            <ul class="share">
+                <li>Email:<input type="text" class="shareEmail" ></li>
+                
+              </ul>
+        </li> -->
+        <li><span routerLink="/operate">Log Out</span>
+        </li>
+        <li id="account" (click)="account($event)">
+          {{childData}} : My Account
+        </li>
+
+      </ul>
+    </div>
+
+  </div>

@@ -1,0 +1,39 @@
+
+.operatePage{
+    height: 1400px;
+    width:100%;
+    background-image:url('../../../../image/4.jpg'); 
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    overflow: auto;
+}
+.operateArea{
+    position: fixed;
+    top: 50px;
+    left:10%;
+    height: 890px;
+    width:1000px;
+    font-weight: 7000;
+    padding: 9px 10px 8px;
+    box-shadow:5px 2px 6px；
+}
+.advanceGuide{
+   height:600px;
+   background-color:rgb(58,58,58);
+   opacity: 0.2;
+   width:25%;
+   right:0;
+   margin-top:100px;
+   position:fixed;
+}
+.stickerArea{
+    height:600px;
+//    background-color:rgb(58,58,58);
+   opacity: 1;
+   background-color:white;
+   width:25%;
+   right:0;
+   margin-top:100px;
+   position:fixed;
+   overflow: auto;
+}

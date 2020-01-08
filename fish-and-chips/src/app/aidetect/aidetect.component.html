@@ -1,0 +1,38 @@
+<div id="aidetect">
+
+  <div class="head">AI Detect</div>
+  <div>
+    <div id="open">Open File
+      <input type="file" id="imgIntelligent" (change)="read($event)" />
+    </div>
+    <div id="AI">
+
+    </div>
+
+    <div class="modle">
+      <span>Model:</span>
+      <select [(ngModel)]="m" ng-init="m='general'" class="select">
+
+        <option value="general">general</option>
+        <option value="apparel">apparel</option>
+        <option value="color">color</option>
+        <option value="celebrity">celebrity</option>
+        <option value="demographics">demographics</option>
+      </select>
+      <br>
+      <input type="button" value="Detect" (click)="cla($event)" class="detect" />
+      <br>
+      <ul class="tags">
+        　　<li *ngFor="let tag of tags">{{tag}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="search">
+    <input type="text" [(ngModel)]="keyword" class="input" placeholder="  Search in Unsplash" />
+
+    <input type="button" value="search" (click)="search($event)" class="searchBtn" />
+
+  </div>
+  <div id="showResult">
+  </div>
+</div>

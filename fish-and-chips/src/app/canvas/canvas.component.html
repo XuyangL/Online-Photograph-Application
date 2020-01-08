@@ -1,0 +1,14 @@
+<div  class="box" style="width:800px; height:500px;" [style.height.px]='height' [style.width.px]='width' [style.left.px]='left' [style.top.px]='top'id='box'>
+    <!-- <div class="title" id='title'[style.display]='style'></div> -->
+    <div class='rUp' id='up' [style.display]='style' (mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+    <div class="rDown" id='down'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+    <div class="rLeft" id='left'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+    <div class="rRight" id='right'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+    <div class="rLeftDown" id='ld'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+    <div class="rLeftUp" id='lu'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+    <div class="rRightDown" id='rd'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)' ></div>
+    <div class="rRightUp" id='ru'[style.display]='style'(mousedown)='mousedown($event)' (mousemove)='mousemove($event)' (mouseup)='mouseup($event)' (mouseout)='mouseup($event)'></div>
+      
+    <canvas class='image' id="img" style="width:800px; height:500px;"[style.height.px]='height' [style.width.px]='width' (click)='click()' (dblclick)='position($event)'></canvas>
+</div> 
+<!-- //<ngx-image-editor [config]="config"></ngx-image-editor>  -->

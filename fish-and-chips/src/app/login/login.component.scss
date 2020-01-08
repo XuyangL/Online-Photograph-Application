@@ -1,0 +1,92 @@
+.LoginPage{
+    height: 1400px;
+    width:100%;
+    background-image:url('https://static.squarespace.com/static/53c827a3e4b00a63fc062eb5/t/53e162a3e4b08ac0a8ecac68/1407279779644/DSC07168.jpg'); 
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    overflow: auto;
+}
+.head{
+    font-family: Zapfino;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:rgb(37,37,37);
+    padding-top:80px;
+}
+.formDiv{
+    padding-top:80px;
+    height:500px;
+    width:50%;
+    margin:auto;
+    margin-top:60px;
+    background-color: white;
+    overflow: auto;
+}
+.formDivS{
+    height:100%;
+    width:80%;
+    // background-color: antiquewhite;
+    margin:auto;
+}
+.empty{
+    height:200px;
+    width:100%; 
+}
+.title{
+    font-family: Zapfino;
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:rgb(37,37,37);
+    margin-bottom: 40px;
+
+}
+
+input{
+    height:40px;
+    width:100%;
+    display: block;
+    font-size:20px;
+    font-weight: 100px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-family: sans-serif;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+}
+.label{
+    margin-top:20px;
+    display: block;
+    height:40px;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+    float:left;
+}
+.login {
+    height:40px;
+    width:100px;
+    background-color: #000;
+    color:white;
+    margin:auto;
+    margin-top:80px;
+    font-size:18px;
+}
+.register{
+    height:40px;
+    width:100px;
+    background-color: white;
+    color:rgb(37,37,37);
+    margin:auto;
+    border:none;
+    font-size:14px;
+    font-family:'Times New Roman', Times, serif;
+    float:right;
+    
+
+}

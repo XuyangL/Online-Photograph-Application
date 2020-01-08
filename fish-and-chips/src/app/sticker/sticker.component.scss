@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sticker {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    overflow: auto;
+}
+
+img {
+    height: 25px;
+    width: 30px;
+}
+
+table {
+    margin: auto; // background-color: aqua;
+}
+
+.s {
+    height: 150px;
+    width: 110px; // background-color: aliceblue;
+}
+
+.f1 {
+    background-image: url("../../../../image/bolt/bolt_flash.png");
+    background-size: 100% 100%; // background-color: bisque;
+}
+
+.f2 {
+    background-image: url("../../../../image/bolt/bolt_stay.png");
+    background-size: 100% 100%;
+}
+
+.f3 {
+    background-image: url("../../../../image//bolt/penny.png");
+    background-size: 100% 100%;
+}
+
+.f4 {
+    background-image: url("../../../../image/bolt/mittens.png");
+    background-size: 100% 100%;
+}
+
+.f5 {
+    background-image: url("../../../../image/bolt/bolt_jump.png");
+    background-size: 100% 100%;
+}
+
+.f6 {
+    background-image: url("../../../../image/bolt/rhino.png");
+    background-size: 100% 100%;
+}
+
+.f7 {
+    background-image: url("../../../../image/meow-iconka/cat_box.png");
+    background-size: 100% 100%;
+}
+
+.f8 {
+    background-image: url("../../../../image/meow-iconka/cat_clean.png");
+    background-size: 100% 100%;
+}
+
+.f9 {
+    background-image: url("../../../../image/meow-iconka/cat_poo.png");
+    background-size: 100% 100%;
+}
+
+.f10 {
+    background-image: url("../../../../image/meow-iconka/cat_hiss.png");
+    background-size: 100% 100%;
+}
+
+.f11 {
+    background-image: url("../../../../image/meow-iconka/cat_fish.png");
+    background-size: 100% 100%;
+}
+
+.f12 {
+    background-image: url("../../../../image/meow-iconka/cat_purr.png");
+    background-size: 100% 100%;
+}

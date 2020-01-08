@@ -1,0 +1,15 @@
+<div class="operatePage">
+  <div class="nav" >
+    <app-advance-operate-nav [childData]="userName" [isShown]='isShown' #child></app-advance-operate-nav>
+  </div>
+  
+  <div class="operateArea">
+      <app-operate-image-box></app-operate-image-box>
+  </div>
+  <div class="advanceGuide">
+      <app-guide-advance></app-guide-advance>
+  </div>
+  <div class="stickerArea" *ngIf='child.isShown' >
+      <app-sticker></app-sticker>
+  </div>
+</div>

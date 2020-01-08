@@ -1,0 +1,280 @@
+$dark-blue: #222;
+$green: #90feb5;
+$action-color: $green;
+
+.adminPage{
+    height: 1000px;
+    width:100%;
+    background-image:url('https://static.squarespace.com/static/53c827a3e4b00a63fc062eb5/t/53e162a3e4b08ac0a8ecac68/1407279779644/DSC07168.jpg'); 
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    // -webkit-filter: grayscale(100%);
+    // opacity: 0.10;
+    overflow: auto;
+    animation: hue-rotate 10s linear infinite;
+}
+.head{
+    font-family: Zapfino;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:rgb(37,37,37);
+    padding-top:80px;
+}
+.title{
+    font-family: Zapfino;
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:rgb(37,37,37);
+    margin-bottom: 40px;
+
+}
+
+// ul.nav{
+//     padding:0px;
+//     margin:0px;
+//     list-style-type:none;
+//     width:390px;
+//     /*background-color:#8bd400;*/
+//     background:#faa819;
+//     /*float:left;*/
+//     overflow: hidden;
+// }
+
+// ul.nav li{
+//     /*display: inline;*/
+//     float: left;
+// }
+// ul.nav a{
+//     display:block;
+//     padding:0 10px;
+//     line-height: 2.2;
+//     text-decoration:none;
+//     color:#fff;
+//     // background: url('img/divider.gif') repeat-y left top;
+// }
+
+// ul.nav .first a {
+//     background-image: none;
+// }
+// ul.nav a:hover, ul.nav a:focus{
+//     color:#333;
+// }
+
+.adminArea{
+    padding-top:80px;
+    height:300px;
+    width:50%;
+    margin:auto;
+    margin-top:60px;
+    background-color: white;
+    overflow: auto;
+    animation: hue-rotate 10s linear infinite;
+}
+.adminAreaS{
+    height:100%;
+    width:80%;
+    // background-color: antiquewhite;
+    margin:auto;
+}
+.empty{
+    height:200px;
+    width:100%; 
+}
+ul li{
+    list-style-type:none;
+    height:100px;
+    // background-color: aqua;
+    // border:2px solid black;
+    overflow: hidden;
+    margin-top:10px;    
+    
+}
+.user{
+    float:left;
+    height:400px;
+    width:240px;
+    line-height: 30px;
+    background-color: azure;
+    // display: inline-block;
+    // margin-right: 50px;
+    padding-top:35px;
+}
+button{
+    border-radius:50%;
+    height:30px;
+    width:30px;
+    background-color: white;
+    margin-left:30px;
+    float:left;
+    margin-top:36px;
+    border:2px solid black;
+}
+.logout{
+    border-radius:0%;
+    width:100px;
+    height:50px;
+    margin-left:39%;
+    color:white;
+    font-size: 14px;
+    font-weight: 100;
+    background-color: #222;
+    margin-bottom: 50px;
+}
+.account{
+    border-radius:0%;
+    width:100px;
+    height:50px;
+    // margin-left:40%;
+    color:white;
+    font-size: 14px;
+    font-weight: 100;
+    background-color: #222;
+    margin-bottom: 50px;
+}
+// button:active{
+//     border:none;
+// }
+.adminUser{
+    display: block;
+    height: 100%;
+    
+}
+
+  
+  .button {
+    -webkit-font-smoothing: antialiased;
+    background-color: $dark-blue;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-out;
+  
+    &:hover {
+      background-color: $action-color;
+      color: #fff;
+    }
+    
+    &:active {
+      transform: scale(0.95);
+    }
+  
+    &--bubble {
+      position: relative;
+      z-index: 2;
+      color: white;
+      background: none;
+  
+      &:hover {
+        background: none;
+      }
+  
+      &:hover + .button--bubble__effect-container .circle {
+        background: darken($action-color, 15%);
+      }
+  
+      &:hover + .button--bubble__effect-container .button {
+        background: darken($action-color, 15%);
+      }
+  
+      &:active + .button--bubble__effect-container {
+        transform: scale(0.95);
+      }
+  
+      &__container {
+        position: relative;
+        display: inline-block;
+  
+        .effect-button {
+          position: absolute;
+          width: 50%;
+          height: 25%;
+          top: 50%;
+          left: 25%;
+          z-index: 1;
+          transform: translateY(-50%);
+          background: $dark-blue;
+          transition: background 0.1s ease-out;
+        }
+      }
+    }
+  }
+  
+  .button--bubble__effect-container {
+    position: absolute;
+    display: block;
+    width: 150%;
+    height: 400%;
+    top: -150%;
+    left: -42%;
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+  
+    .circle {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 15px;
+      background: $dark-blue;
+      transition: background 0.1s ease-out;
+  
+      &.top-left {
+          top: 40%;
+          left: 27%;
+      }
+  
+      &.bottom-right {
+          bottom: 40%;
+          right: 27%;
+      }
+    }
+  }
+  
+  .goo {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .button--bubble__container {
+    top: 50%;
+    margin-top: -25px;
+  }
+  
+  @keyframes hue-rotate {
+        from {
+          -webkit-filter: hue-rotate(0);
+          -moz-filter: hue-rotate(0);
+          -ms-filter: hue-rotate(0);
+          filter: hue-rotate(0);
+        }
+        to {
+          -webkit-filter: hue-rotate(360deg);
+          -moz-filter: hue-rotate(360deg);
+          -ms-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
+        }
+  }
+
+
